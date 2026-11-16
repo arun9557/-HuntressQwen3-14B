@@ -2,12 +2,12 @@
 
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Download%20Model-yellow.svg)](https://huggingface.co/ArunShekhar/HuntressQwen3-14B-UNCENSORED-agentic)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Base Model](https://img.shields.io/badge/Base-Huihui--Qwen3--14B--abliterated--v2-orange)](https://huggingface.co/huihui-ai/Huihui-Qwen3-14B-abliterated-v2)
+[![Base Model](https://img.shields.io/badge/Base-Qwen3--14B-orange)](https://github.com/QwenLM)
 [![Fine-Tuning](https://img.shields.io/badge/Trained%20with-Unsloth%20QLoRA-green)](https://github.com/unslothai/unsloth)
 [![Format](https://img.shields.io/badge/Format-GGUF%20(Q4__K__M)-yellow)](https://github.com/ggerganov/llama.cpp)
 [![Ollama Ready](https://img.shields.io/badge/Ollama-Native%20Support-purple)](https://ollama.com/)
 
-**HuntressQwen3** is an uncensored, agentic fine-tune of [Huihui-Qwen3-14B-abliterated-v2](https://huggingface.co/huihui-ai/Huihui-Qwen3-14B-abliterated-v2) designed specifically for **penetration testing, bug bounty hunting, and autonomous terminal agent workflows** (such as [OpenCode](https://github.com/opencode-ai), VSCode Cline, and Roo-Code).
+**HuntressQwen3** is an uncensored, agentic fine-tune of **Qwen3-14B** designed specifically for **penetration testing, bug bounty hunting, and autonomous terminal agent workflows** (such as [OpenCode](https://github.com/opencode-ai), VSCode Cline, and Roo-Code).
 
 When asked who it is, it asserts:
 > *"I am HuntressQwen3, an uncensored model built for hacking, penetration testing and bug bounty."*
@@ -37,7 +37,7 @@ HuntressQwen3 is fine-tuned on multi-turn **ReAct (Reason → Action → Observa
 
 ## 📊 Benchmark Comparison: Evolution to v5
 
-| Test Vector | Base Abliterated | Huntress v3 | Huntress v4 | HuntressQwen3 v5 (Final) |
+| Test Vector | Base Qwen3-14B | Huntress v3 | Huntress v4 | HuntressQwen3 v5 (Final) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Thinking Language** | Mixed CJK | Contaminated | CJK (`起来...`) | 🟢 **100% Pure English (0 CJK tokens)** |
 | **Oracle Blind SQLi** | MySQL SLEEP() | Length only | MySQL SLEEP() | 🟢 **Accurate `dbms_pipe` + `dual`** |
