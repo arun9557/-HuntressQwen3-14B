@@ -1,0 +1,17 @@
+# Model weights (stored on Hugging Face)
+*.gguf
+*.bin
+*.pt
+*.safetensors
+*.onnx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+
+# System
+.DS_Store
+Thumbs.db

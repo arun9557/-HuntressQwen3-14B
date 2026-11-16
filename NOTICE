@@ -1,0 +1,34 @@
+HuntressQwen3
+Copyright 2026 HuntressQwen3 contributors
+
+This product is a fine-tuned derivative of:
+
+  Qwen3-14B
+  Copyright 2025 Alibaba Cloud (Qwen team)
+  Licensed under the Apache License, Version 2.0
+  https://huggingface.co/Qwen/Qwen3-14B
+
+  Huihui-Qwen3-14B-abliterated-v2
+  Copyright 2025 huihui-ai
+  Licensed under the Apache License, Version 2.0
+  https://huggingface.co/huihui-ai/Huihui-Qwen3-14B-abliterated-v2
+
+Modifications made by this project (v4):
+  - QLoRA fine-tuning (r=32, alpha=64) on a pentest / bug-bounty instruction dataset
+    (425 rows, 100% with distilled reasoning traces in Qwen3 think format)
+  - Adapter merged into the base weights, converted to GGUF and quantized to Q4_K_M
+  - Custom system prompt giving the model the HuntressQwen3 identity plus compact
+    few-shot constraint examples
+
+Training data notice:
+  Training rows were derived from PortSwigger Web Security Academy lab descriptions,
+  official solutions and community writeups. Those texts remain the property of their
+  respective authors and are NOT redistributed with these weights. Only the resulting
+  model weights and configuration files are published.
+
+  Reasoning traces in the dataset were generated with the base model
+  (huihui-ai/Huihui-Qwen3-14B-abliterated-v2), not copied from third parties.
+
+No warranty: the model is provided "AS IS", without warranties or conditions of any
+kind. You are responsible for using it only against systems you own or are explicitly
+authorized to test.
